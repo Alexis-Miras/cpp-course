@@ -1,5 +1,5 @@
 #include <iostream>
-#include "myclass.h"
+#include "my_class.h"
 using namespace std;
 
 MyClass::MyClass():
