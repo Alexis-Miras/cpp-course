@@ -5,7 +5,9 @@
 
 class JumpSearch : public SearchingAlgorithm {
     public:
-        JumpSearch() {};
+        JumpSearch();
+        virtual ~JumpSearch() = default;
+        
         int search(vector<int> v, int x) override {
             sort(v.begin(), v.end());
             int n = sqrt(v.size());

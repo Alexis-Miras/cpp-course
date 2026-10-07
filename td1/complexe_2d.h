@@ -9,6 +9,7 @@ class Complexe2D {
         double imaginaire;
     public:
         Complexe2D();
+        virtual ~Complexe2D() = default;
         Complexe2D(double reel, double imaginaire);
         Complexe2D(double value);
         Complexe2D(const Complexe2D& complexe);

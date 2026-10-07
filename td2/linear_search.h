@@ -6,6 +6,8 @@
 class LinearSearch : public SearchingAlgorithm {
     public:
         LinearSearch() {};
+        virtual ~LinearSearch() = default;
+
         int search(vector<int> v, int x) override {
             for (size_t i = 0; i < v.size(); i++) if (v[i] == x) return i;
             return -1;

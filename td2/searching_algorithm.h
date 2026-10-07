@@ -11,8 +11,11 @@ class SearchingAlgorithm {
         int totalSearch;
         int averageComparisons;
     public:
+        SearchingAlgorithm();
         virtual ~SearchingAlgorithm() = default;
+
         virtual int search(vector<int> v, int x) = 0;
+        
         void displaySearchResults(ostream& s, int results, int target);
 };
 

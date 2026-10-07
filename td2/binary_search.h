@@ -5,7 +5,9 @@
 
 class BinarySearch : public SearchingAlgorithm {
     public:
-        BinarySearch() {};
+        BinarySearch();
+        virtual ~BinarySearch() = default;
+
         int search(vector<int> v, int x) override {
             sort(v.begin(), v.end());
             int n = v.size();

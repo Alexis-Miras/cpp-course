@@ -9,6 +9,7 @@ class MyClass {
         string myString;
     public:
         MyClass();
+        virtual ~MyClass() = default;
         MyClass(const string& s);
         void print_my_element() const;
 };
