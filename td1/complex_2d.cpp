@@ -2,24 +2,24 @@
 #include "complexe_2d.h"
 using namespace std;
 
-Complexe2D::Complexe2D() {
-    reel = 0.0;
-    imaginaire = 0.0;
+Complexe2D::Complexe2D():
+reel(0.0), imaginaire(0.0)
+{
 }
 
-Complexe2D::Complexe2D(double r, double i) {
-    reel = r;
-    imaginaire = i;
+Complexe2D::Complexe2D(double r, double i):
+reel(r), imaginaire(i) 
+{
 }
 
-Complexe2D::Complexe2D(double value) {
-    reel = value;
-    imaginaire = value;
+Complexe2D::Complexe2D(double value):
+reel(value), imaginaire(value) 
+{
 }
 
-Complexe2D::Complexe2D(const Complexe2D& complexe) {
-    reel = complexe.reel;
-    imaginaire = complexe.imaginaire;
+Complexe2D::Complexe2D(const Complexe2D& complexe):
+reel(complexe.reel), imaginaire(complexe.imaginaire) 
+{
 }
 
 void Complexe2D::setReel(double newReel) {
