@@ -8,7 +8,7 @@ class JumpSearch : public SearchingAlgorithm {
         JumpSearch();
         virtual ~JumpSearch() = default;
         
-        int search(vector<int> v, int x) override {
+        int search(vector<int>& v, int x) override {
             sort(v.begin(), v.end());
             int n = sqrt(v.size());
             for (size_t i = 0; i < n; i+=n) {

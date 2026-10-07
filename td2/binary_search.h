@@ -8,7 +8,7 @@ class BinarySearch : public SearchingAlgorithm {
         BinarySearch();
         virtual ~BinarySearch() = default;
 
-        int search(vector<int> v, int x) override {
+        int search(vector<int>& v, int x) override {
             sort(v.begin(), v.end());
             int n = v.size();
             for (size_t i = 0; i < n; i++) {

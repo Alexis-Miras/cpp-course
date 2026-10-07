@@ -14,7 +14,7 @@ class SearchingAlgorithm {
         SearchingAlgorithm();
         virtual ~SearchingAlgorithm() = default;
 
-        virtual int search(vector<int> v, int x) = 0;
+        virtual int search(vector<int>& v, int x) = 0; // const vector<int>& v
         
         void displaySearchResults(ostream& s, int results, int target);
 };
